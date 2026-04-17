@@ -92,3 +92,7 @@ check-formatted:
 # Run go vet
 vet:
     go vet ./...
+
+fix:
+    just lint-fix
+    just fmt

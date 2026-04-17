@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/MeKo-Christian/go-overpass"
+	"github.com/cwbudde/go-overpass"
 )
 
 func main() {

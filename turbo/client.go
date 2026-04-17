@@ -1,6 +1,6 @@
 package turbo
 
-import "github.com/MeKo-Christian/go-overpass"
+import "github.com/cwbudde/go-overpass"
 
 // NewClientWithOverride builds a client using Result.EndpointOverride when present.
 // If both override and fallback are empty, it returns the default client.

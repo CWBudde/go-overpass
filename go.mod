@@ -1,3 +1,3 @@
-module github.com/MeKo-Christian/go-overpass
+module github.com/cwbudde/go-overpass
 
 go 1.21
