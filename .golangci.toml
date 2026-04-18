@@ -1,22 +1,22 @@
-version = '2'
+version = "2"
 
 [linters]
 default = 'all'
 disable = [
-  'containedctx',
-  'depguard',
-  'exhaustive',
-  'exhaustruct',
-  'godox',
-  'ireturn',
-  'mnd',
-  'musttag',
-  'nlreturn',
-  'sqlclosecheck',
-  'tagliatelle',
-  'wsl',
+    'containedctx',
+    'depguard',
+    'exhaustive',
+    'exhaustruct',
+    'godox',
+    'ireturn',
+    'mnd',
+    'musttag',
+    'nlreturn',
+    'sqlclosecheck',
+    'tagliatelle',
+    'wsl',
 ]
-enable = ['wsl_v5']
+enable = ['wsl_v5', "revive"]
 
 [linters.settings]
 [linters.settings.tagliatelle]
@@ -34,6 +34,14 @@ allow-whole-block = false
 branch-max-lines = 2
 disable = ['decl']
 
+[linters.settings.revive]
+[[linters.settings.revive.rules]]
+name = "file-length-limit"
+
+[[linters.settings.revive.rules.arguments]]
+max = 1500
+skip-comments = false
+skip-blank-lines = false
 [linters.exclusions]
 generated = 'lax'
 presets = ['comments', 'common-false-positives', 'legacy', 'std-error-handling']

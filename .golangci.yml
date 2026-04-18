@@ -2,3 +2,14 @@ version: "2"
 
 run:
   timeout: 5m
+linters:
+  enable:
+    - revive
+  settings:
+    revive:
+      rules:
+        - name: file-length-limit
+          arguments:
+            - max: 1500
+              skip-comments: false
+              skip-blank-lines: false
